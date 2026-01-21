@@ -1,0 +1,16 @@
+@import '../core/typography'
+
+@mixin up-title-base
+  @include up-typography-defaults
+  @include up-titles-font-weight
+
+  @media screen and (min-width: $up-small-screen)
+    font-size: 18px
+    line-height: 23px
+  @media screen and (min-width: $up-medium-screen)
+    font-size: 20px
+    line-height: 25px
+
+
+.up-title-base
+  @include up-title-base

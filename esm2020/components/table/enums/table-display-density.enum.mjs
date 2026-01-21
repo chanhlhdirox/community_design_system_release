@@ -1,0 +1,7 @@
+export var TableDisplayDensityEnum;
+(function (TableDisplayDensityEnum) {
+    TableDisplayDensityEnum["RELAXED"] = "relaxed";
+    TableDisplayDensityEnum["REGULAR"] = "regular";
+    TableDisplayDensityEnum["CONDENSED"] = "condensed";
+})(TableDisplayDensityEnum || (TableDisplayDensityEnum = {}));
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoidGFibGUtZGlzcGxheS1kZW5zaXR5LmVudW0uanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyIuLi8uLi8uLi8uLi8uLi8uLi9wcm9qZWN0cy91cC9jb21wb25lbnRzL3RhYmxlL2VudW1zL3RhYmxlLWRpc3BsYXktZGVuc2l0eS5lbnVtLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBLE1BQU0sQ0FBTixJQUFZLHVCQUlYO0FBSkQsV0FBWSx1QkFBdUI7SUFDakMsOENBQW1CLENBQUE7SUFDbkIsOENBQW1CLENBQUE7SUFDbkIsa0RBQXVCLENBQUE7QUFDekIsQ0FBQyxFQUpXLHVCQUF1QixLQUF2Qix1QkFBdUIsUUFJbEMiLCJzb3VyY2VzQ29udGVudCI6WyJleHBvcnQgZW51bSBUYWJsZURpc3BsYXlEZW5zaXR5RW51bSB7XG4gIFJFTEFYRUQgPSAncmVsYXhlZCcsXG4gIFJFR1VMQVIgPSAncmVndWxhcicsXG4gIENPTkRFTlNFRCA9ICdjb25kZW5zZWQnXG59XG4iXX0=

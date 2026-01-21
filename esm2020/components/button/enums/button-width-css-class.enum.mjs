@@ -1,0 +1,7 @@
+export var ButtonWidthCSSClasses;
+(function (ButtonWidthCSSClasses) {
+    ButtonWidthCSSClasses["BUTTON_FIXED"] = "up-button-fixed";
+    ButtonWidthCSSClasses["BUTTON_FLUID"] = "up-button-fluid";
+    ButtonWidthCSSClasses["BUTTON_CONTAIN"] = "up-button";
+})(ButtonWidthCSSClasses || (ButtonWidthCSSClasses = {}));
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiYnV0dG9uLXdpZHRoLWNzcy1jbGFzcy5lbnVtLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiLi4vLi4vLi4vLi4vLi4vLi4vcHJvamVjdHMvdXAvY29tcG9uZW50cy9idXR0b24vZW51bXMvYnV0dG9uLXdpZHRoLWNzcy1jbGFzcy5lbnVtLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBLE1BQU0sQ0FBTixJQUFZLHFCQUlYO0FBSkQsV0FBWSxxQkFBcUI7SUFDL0IseURBQWdDLENBQUE7SUFDaEMseURBQWdDLENBQUE7SUFDaEMscURBQTRCLENBQUE7QUFDOUIsQ0FBQyxFQUpXLHFCQUFxQixLQUFyQixxQkFBcUIsUUFJaEMiLCJzb3VyY2VzQ29udGVudCI6WyJleHBvcnQgZW51bSBCdXR0b25XaWR0aENTU0NsYXNzZXMge1xuICBCVVRUT05fRklYRUQgPSAndXAtYnV0dG9uLWZpeGVkJyxcbiAgQlVUVE9OX0ZMVUlEID0gJ3VwLWJ1dHRvbi1mbHVpZCcsXG4gIEJVVFRPTl9DT05UQUlOID0gJ3VwLWJ1dHRvbidcbn1cbiJdfQ==

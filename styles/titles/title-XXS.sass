@@ -1,0 +1,12 @@
+@import '../core/typography'
+
+
+@mixin up-title-XXS
+  @include up-typography-defaults
+  @include up-titles-font-weight
+
+  font-size: 12px
+  line-height: 15px
+
+.up-title-XXS
+  @include up-title-XXS

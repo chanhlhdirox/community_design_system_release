@@ -1,0 +1,6 @@
+export var KeyboardKeysEnum;
+(function (KeyboardKeysEnum) {
+    KeyboardKeysEnum["Escape"] = "Escape";
+    KeyboardKeysEnum["Enter"] = "Enter";
+})(KeyboardKeysEnum || (KeyboardKeysEnum = {}));
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoia2V5Ym9hcmQta2V5cy5lbnVtLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiLi4vLi4vLi4vLi4vLi4vLi4vcHJvamVjdHMvdXAvc3JjL2xpYi91dGlscy9rZXlib2FyZC1rZXlzLmVudW0udHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUEsTUFBTSxDQUFOLElBQVksZ0JBR1g7QUFIRCxXQUFZLGdCQUFnQjtJQUMxQixxQ0FBaUIsQ0FBQTtJQUNqQixtQ0FBZSxDQUFBO0FBQ2pCLENBQUMsRUFIVyxnQkFBZ0IsS0FBaEIsZ0JBQWdCLFFBRzNCIiwic291cmNlc0NvbnRlbnQiOlsiZXhwb3J0IGVudW0gS2V5Ym9hcmRLZXlzRW51bSB7XG4gIEVzY2FwZSA9ICdFc2NhcGUnLFxuICBFbnRlciA9ICdFbnRlcidcbn1cbiJdfQ==

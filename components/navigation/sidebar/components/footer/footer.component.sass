@@ -1,0 +1,46 @@
+\:host
+  display: flex
+  flex-direction: column
+  width: inherit
+  justify-content: flex-end
+  align-items: center
+  margin-top: auto
+  padding-top: 36px
+
+  .up-sidebar-application-details
+    display: flex
+    flex-direction: row
+
+    .up-icon-shape
+      width: 26px
+      height: 32px
+      margin-right: 12px
+
+    .up-sidebar-footer-company-name
+      display: flex
+      flex-direction: column
+
+      .up-icon-name
+        width: 83px
+        height: 22px
+
+      .up-icon-tagline
+        width: 65px
+        height: 9px
+        margin-left: auto
+
+  .up-sidebar-footer-version
+    display: flex
+    justify-content: center
+    align-items: center
+    padding-top: 20px
+    padding-bottom: 24px
+    p
+      color: var(--up-brand-1-200)
+
+  .up-sidebar-application-details-collapsed
+    @extend .up-sidebar-application-details
+    .up-icon-shape
+      margin: 0
+    .up-sidebar-footer-company-name
+      display: none

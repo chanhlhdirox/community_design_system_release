@@ -1,0 +1,56 @@
+@import "btx-css-lib/lib/foundation/paragraphs"
+
+.up-timeline-event-header
+  display: flex
+  flex-direction: row
+  height: 30px
+  align-items: center
+  padding-top: 14px
+
+  .up-timeline-avatar
+    margin-left: 16px
+    margin-right: 10px
+
+  .up-timeline-date, .up-timeline-separator
+    padding-left: 7px
+    font-weight: 400
+    color: var(--up-neutral-600)
+
+  .up-timeline-date
+    padding-top: 2px
+
+  .up-timeline-separator
+    color: var(--up-neutral-400)
+
+  .up-timeline-event-header-options
+    display: flex
+    margin-left: auto
+
+    .up-timeline-checkbox
+      padding-right: 5px
+      border-right: 1px solid var(--up-neutral-400)
+      @include up-paragraph-S
+      font-weight: 400
+      font-size: 16px
+
+      .up-paragraph-S
+        font-weight: 400
+        font-size: 16px
+
+    .up-timeline-header-options-icon
+      width: 16px
+      height: 16px
+      margin-left: 16px
+      &:hover
+        cursor: pointer
+
+      div[style]
+        color: var(--up-negative-500) !important
+
+.up-timeline-user-comment
+  width: 98%
+  padding: 13px 0 20px 40.5px
+
+  p
+    font-size: 14px
+    font-weight: 400

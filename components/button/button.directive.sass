@@ -1,0 +1,298 @@
+button:hover
+  cursor: pointer
+
+.up-button
+  @include up-typography-buttons
+  display: inline-block
+  height: 40px
+  padding: 9px 16px
+  outline: none
+  border: none
+  i
+    vertical-align: middle
+    margin-right: 8px
+  i:last-of-type
+    margin-right: 0px
+  i div
+    display: inline-flex
+  i, i div, i div svg
+    height: 16px
+    width: 16px
+
+  &.disabled
+    @extend .disabled-transparent
+    background-color: var(--up-neutral-400) !important
+    border: none
+    &:hover, &:active
+      background-color: var(--up-neutral-400) !important
+
+  &.disabled-transparent
+    opacity: 0.32
+    cursor: not-allowed
+    color: var(--up-neutral-900)
+    i div[style]
+      color: var(--up-neutral-900) !important
+    &:hover, &:active
+      color: var(--up-neutral-900) !important
+
+  &.disabled-transparent-white
+    opacity: 0.32
+    cursor: not-allowed
+    color: var(--up-white)
+    i div[style]
+      color: var(--up-white) !important
+    &:hover, &:active
+      color: var(--up-white) !important
+
+  &.up-button-fixed
+    height: 42px
+    min-width: 200px
+    position: relative
+    padding-left: 36px
+    padding-right: 36px
+    i:last-of-type
+      margin-right: 0
+      position: absolute
+      right: 16px
+      top: 13px
+
+  &.up-button-fluid
+    height: 42px
+    width: 100%
+    i:last-of-type
+      margin-right: 0
+
+  &.up-button-primary
+    background-color: var(--up-brand-3-400)
+    color: var(--up-brand-1-800)
+    border: none
+    i div[style]
+      color: var(--up-brand-1-800) !important
+    &:hover
+      background-color: var(--up-brand-3-500)
+    &:active
+      background-color: var(--up-brand-3-300)
+    &:disabled
+      @extend .disabled
+
+  &.up-button-secondary
+    background-color: var(--up-brand-1-700)
+    color: var(--up-white)
+    border: none
+    i div[style]
+      color: var(--up-white) !important
+    &:hover
+      background-color: var(--up-brand-1-800)
+    &:active
+      background-color: var(--up-brand-1-600)
+    &:disabled
+      @extend .disabled
+
+  &.up-button-secondary-danger
+    background-color: var(--up-negative-600)
+    color: var(--up-white)
+    border: none
+    i div[style]
+      color: var(--up-white) !important
+    &:hover
+      background-color: var(--up-negative-700)
+    &:active
+      background-color: var(--up-negative-500)
+    &:disabled
+      @extend .disabled
+
+  &.up-button-secondary-outline
+    background-color: var(--up-white)
+    color: var(--up-brand-1-700)
+    border: 2px solid var(--up-brand-1-700)
+    i div[style]
+      color: var(--up-brand-1-700) !important
+    &:hover
+      border-color: var(--up-brand-1-800)
+      color: var(--up-brand-1-800)
+      background-color: var(--up-white)
+      i div[style]
+        color: var(--up-brand-1-800) !important
+    &:active
+      color: var(--up-brand-1-600)
+      border-color: var(--up-brand-1-600)
+      i div[style]
+        color: var(--up-brand-1-600) !important
+    &:disabled
+      @extend .disabled
+
+  &.up-button-secondary-outline-danger
+    background-color: var(--up-white)
+    color: var(--up-negative-600)
+    border: 2px solid var(--up-negative-600)
+    i div[style]
+      color: var(--up-negative-600) !important
+    &:hover
+      border-color: var(--up-negative-700)
+      color: var(--up-negative-700)
+      background-color: var(--up-white)
+      i div[style]
+        color: var(--up-negative-700) !important
+    &:active
+      color: var(--up-negative-500)
+      border-color: var(--up-negative-500)
+      i div[style]
+        color: var(--up-negative-500) !important
+    &:disabled
+      @extend .disabled
+
+  &.up-button-tertiary
+    background: none
+    border: none
+    color: var(--up-brand-1-700)
+    i div[style]
+      color: var(--up-brand-1-700) !important
+    &:hover
+      color: var(--up-brand-1-800)
+      i div[style]
+        color: var(--up-brand-1-800) !important
+    &:active
+      color: var(--up-brand-1-600)
+      i div[style]
+        color: var(--up-brand-1-600) !important
+    &:disabled
+      @extend .disabled-transparent
+
+  &.up-button-tertiary-danger
+    background: none
+    border: none
+    color: var(--up-negative-600)
+    i div[style]
+      color: var(--up-negative-600) !important
+    &:hover
+      color: var(--up-negative-700)
+      i div[style]
+        color: var(--up-negative-700) !important
+    &:active
+      color: var(--up-negative-500)
+      i div[style]
+        color: var(--up-negative-500) !important
+    &:disabled
+      @extend .disabled-transparent
+      color: var(--up-neutral-900)
+      i div[style]
+        color: var(--up-neutral-900) !important
+
+  &.up-button-rounded
+    background-color: var(--up-brand-1-800)
+    border: none
+    border-radius: 30px
+    font-size: 16px
+    font-weight: 600
+    color: var(--up-white)
+    i div[style]
+      color: var(--up-white) !important
+    &:hover
+      background-color: var(--up-brand-2)
+    &:active
+      background-color: var(--up-brand-1-700)
+    &:disabled
+      @extend .disabled
+
+.up-button-dark-theme
+  &.up-button-secondary
+    background-color: var(--up-brand-1-500)
+    &:hover
+      background-color: var(--up-brand-1-600)
+    &:active
+      background-color: var(--up-brand-1-400)
+    &:disabled
+      @extend .disabled-transparent
+      background-color: var(--up-white)
+
+  &.up-button-secondary-danger
+    background-color: var(--up-negative-300)
+    &:hover
+      background-color: var(--up-negative-400)
+    &:active
+      background-color: var(--up-negative-200)
+    &:disabled
+      @extend .disabled-transparent
+      background-color: var(--up-white)
+
+  &.up-button-secondary-outline
+    background-color: transparent
+    color: var(--up-white)
+    border: 2px solid var(--up-white)
+    i div[style]
+      color: var(--up-white) !important
+    &:hover
+      border-color: var(--up-brand-1-200)
+      color: var(--up-brand-1-200)
+      background-color: transparent
+      i div[style]
+        color: var(--up-brand-1-200) !important
+    &:active
+      color: var(--up-white)
+      border-color: var(--up-white)
+      i div[style]
+        color: var(--up-white) !important
+    &:disabled
+      @extend .disabled-transparent
+      background-color: var(--up-white)
+
+  &.up-button-secondary-outline-danger
+    background-color: transparent
+    color: var(--up-negative-200)
+    border: 2px solid var(--up-negative-200)
+    i div[style]
+      color: var(--up-up-negative-200) !important
+    &:hover
+      border-color: var(--up-negative-300)
+      color: var(--up-negative-300)
+      background-color: transparent
+      i div[style]
+        color: var(--up-negative-300) !important
+    &:active
+      color: var(--up-white)
+      border-color: var(--up-negative-50)
+      i div[style]
+        color: var(--up-white) !important
+    &:disabled
+      @extend .disabled-transparent
+      background-color: var(--up-white)
+
+  &.up-button-tertiary
+    background: none
+    border: none
+    color: var(--up-brand-1-50)
+    i div[style]
+      color: var(--up-brand-1-50) !important
+    &:hover
+      color: var(--up-brand-1-200)
+      i div[style]
+        color: var(--up-brand-1-200) !important
+    &:active
+      color: var(--up-white)
+      i div[style]
+        color: var(--up-white) !important
+    &:disabled
+      @extend .disabled-transparent-white
+
+  &.up-button-tertiary-danger
+    background: none
+    border: none
+    color: var(--up-negative-200)
+    i div[style]
+      color: var(--negative-200) !important
+    &:hover
+      color: var(--up-negative-300)
+      i div[style]
+        color: var(--up-negative-300) !important
+    &:active
+      color: var(--up-negative-50)
+      i div[style]
+        color: var(--up-negative-50) !important
+    &:disabled
+      @extend .disabled-transparent-white
+
+.up-button-rounded-danger,
+.up-button-primary-danger
+  display: none
+
+

@@ -1,0 +1,209 @@
+@import "btx-css-lib/lib/foundation/paragraphs/paragraph-base"
+
+.up-pdf-preview-container--magnifying-glass-enabled
+  .up-pdf-preview-options
+    .zoom-controls
+      padding-left: 8px
+    .magnifying-glass-control
+      &.pdf-control-disabled
+        cursor: not-allowed!important
+
+.up-pdf-preview__zoom-scale-dropdown
+  .zoom-scale-option
+    display: flex
+    line-height: 24px
+    height: 24px
+    justify-content: center
+    align-items: center
+    i
+      margin: 0 8px 2px 0
+
+.up-pdf-preview-container
+  width: 560px
+  height: 100%
+  background-color: var(--up-neutral-400)
+  position: relative
+  overflow-y: hidden
+
+  .magnifyContainer
+    margin: 0
+    padding: 0
+    width: 175px
+    height: 175px
+    position: absolute
+    border: 1px solid var(--up-neutral-700)
+    overflow: hidden
+    border-radius: 100%
+    z-index: 100
+    &.hidden
+      display: none
+    .magnifyingGlass
+      margin: 0
+      padding: 0
+      display: block
+      z-index: 10
+
+  .signPlaceholderContainer
+    position: absolute
+    background-color: #F1F0FA
+    color: #312B78
+    cursor: grab
+    user-select: none
+    top: 100px
+    left: 310px
+    z-index: 1
+    border: 2px dashed #312B78
+
+    &.active
+      cursor: grabbing
+
+    .signPlaceholderText
+      display: inline-block
+      margin: 10px
+      padding: 1px 11px
+
+  &.up-pdf-preview-container--magnifying-glass-visible
+    .ng2-pdf-viewer-container
+      overflow: hidden
+    .up-pdf-preview-viewer-container
+      position: relative
+      .up-pdf-preview-viewer
+        .pdfViewer
+          padding: 0!important
+
+  &.up-pdf-preview-container--with-invalid-format
+    background-color: #FFFFFF
+    .up-pdf-preview-invalid-format-container
+      display: flex
+      flex-direction: column
+      align-items: center
+      justify-content: center
+      width: 100%
+      height: 740px
+      .error-message
+        width: 100%
+        text-align: center
+      a, a:active, a:visited, a:focus
+        outline: none
+        text-decoration: none
+  .up-pdf-preview-options
+    height: 49px
+    width: 100%
+    padding: 8.5px 10px
+    background-color: #FFFFFF
+    display: flex
+    align-items: center
+    *
+      user-select: none
+    a, a:hover, a:visited, a:focus
+      text-outline: none
+      text-decoration: none
+    .container-with-separator
+      position: relative
+      &::after
+        content: ""
+        display: block
+        height: 16px
+        width: 1px
+        background: var(--up-neutral-500)
+        position: absolute
+        top: 8px
+        right: 0
+    .up-pdf-preview-option-spacer
+      flex: 1
+    .download-container, .full-screen-container
+      @include up-paragraph-base
+      color: var(--up-brand-1-800)
+      font-weight: 600
+      display: flex
+      padding-left: 8px
+      height: 32px
+      line-height: 32px
+      cursor: pointer
+      &.download-container--no-padding
+        padding-left: 0
+      .download-button-label
+        white-space: nowrap
+        overflow-x: hidden
+        text-overflow: ellipsis
+      i
+        height: 24px
+        width: 24px
+        display: block
+        margin-right: 6px
+        padding-top: 2px
+    .zoom-scale-controls-container
+      @include up-paragraph-base
+      color: var(--up-brand-1-800)
+      font-weight: 600
+      height: 32px
+      line-height: 32px
+      padding-left: 8px
+      cursor: pointer
+      &.pdf-control-disabled
+        cursor: not-allowed!important
+      .current-zoom-scale
+        display: flex
+        .pdf-preview-button-control-container
+          padding-left: 0
+    .zoom-controls
+      display: flex
+      align-items: center
+      .zoom-percentage-input-container
+        width: 55px
+    .pagination-controls
+      display: flex
+      align-items: center
+      .pagination-control-input-container
+        width: 34px
+        margin: 0 4px
+      .pagination-control-label
+        @include up-paragraph-base
+        color: var(--up-brand-1-800)
+        font-weight: 600
+      .pdf-preview-button-control-container
+        padding-right: 0
+    .download-container .zoom-scale-controls-container .zoom-controls .pagination-controls
+      flex-grow: 1
+      flex-shrink: 0
+    .pdf-preview-button-control-container, .pdf-preview-chevron-button-control-container
+      height: 32px
+      cursor: pointer
+      padding: 4px 6px
+      display: inline-flex
+      &.pdf-control-disabled
+        cursor: not-allowed
+      i
+        display: inline-flex
+        div
+          display: inline-flex
+        svg
+          height: 24px
+          width: 24px
+        height: 24px
+        width: 24px
+    .pdf-preview-chevron-button-control-container
+      padding: 4px 0
+  .up-pdf-preview-viewer-container
+    display: block
+    max-height: calc(100% - 49px)
+  .up-pdf-preview-viewer-container, .up-pdf-preview-viewer
+    height: inherit
+    .up-pdf-preview-viewer
+      width: 560px
+      min-height: 780px
+      position: relative
+      display: block
+      .pdfViewer
+        padding: 8px
+      .page
+        filter: drop-shadow(0px 8px 16px rgba(49, 43, 120, 0.08)) drop-shadow(0px 4px 8px rgba(49, 43, 120, 0.12)) drop-shadow(0px 2px 4px rgba(49, 43, 120, 0.16))
+  .pagination-controls
+    .pdf-preview-button-control-container
+      padding: 8px 6px!important
+      i
+        svg
+          height: 16px!important
+          width: 16px!important
+        height: 16px!important
+        width: 16px!important

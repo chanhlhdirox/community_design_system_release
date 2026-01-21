@@ -1,0 +1,43 @@
+import { EventEmitter, QueryList } from '@angular/core';
+import { PrefixDirective } from '../prefix/prefix.directive';
+import { SuffixDirective } from '../suffix/suffix.directive';
+import { InputDirective } from '../input/input.directive';
+import { NgSelectComponent } from '@ng-select/ng-select';
+import { FormFieldLayoutType, FormFieldSizeType } from '../form-field-container/constants';
+import { TooltipTrigger } from '../../tooltip/tooltip.constants';
+import * as i0 from "@angular/core";
+export declare class UpInputGroupComponent {
+    layout: FormFieldLayoutType;
+    size: FormFieldSizeType;
+    tooltip: string;
+    name: string;
+    label: string;
+    clearable: boolean;
+    showRequiredMark: boolean;
+    allowPasswordVisibilityToggle: boolean;
+    errors: string[];
+    helpers: string[];
+    warnings: string[];
+    labelContainerClass: string;
+    inputContainerClass: string;
+    persistTooltip: boolean;
+    tooltipTrigger: TooltipTrigger;
+    inputCleared: EventEmitter<void>;
+    prefixChildren: QueryList<PrefixDirective>;
+    suffixChildren: QueryList<SuffixDirective>;
+    inputControl: InputDirective | undefined;
+    ngSelectControl: NgSelectComponent;
+    get hasPrefix(): boolean;
+    get hasSuffix(): boolean;
+    get inputFocused(): boolean;
+    get controlValue(): string;
+    isSearchIconVisible(): boolean;
+    isInputClearable(): boolean;
+    isInputTypeEmail(): boolean;
+    isInputTypeSearch(): boolean;
+    clearInput(): void;
+    togglePasswordVisibility(): void;
+    static ɵfac: i0.ɵɵFactoryDeclaration<UpInputGroupComponent, never>;
+    static ɵcmp: i0.ɵɵComponentDeclaration<UpInputGroupComponent, "up-input-group", never, { "layout": "layout"; "size": "size"; "tooltip": "tooltip"; "name": "name"; "label": "label"; "clearable": "clearable"; "showRequiredMark": "showRequiredMark"; "allowPasswordVisibilityToggle": "allowPasswordVisibilityToggle"; "errors": "errors"; "helpers": "helpers"; "warnings": "warnings"; "labelContainerClass": "labelContainerClass"; "inputContainerClass": "inputContainerClass"; "persistTooltip": "persistTooltip"; "tooltipTrigger": "tooltipTrigger"; }, { "inputCleared": "inputCleared"; }, ["inputControl", "ngSelectControl", "prefixChildren", "suffixChildren"], ["[upPrefix]", "*", "[upSuffix]"], false>;
+}
+//# sourceMappingURL=input-group.component.d.ts.map

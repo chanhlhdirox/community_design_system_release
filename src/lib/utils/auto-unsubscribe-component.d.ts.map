@@ -1,0 +1,1 @@
+{"version":3,"file":"auto-unsubscribe-component.d.ts","sourceRoot":"","sources":["../../../../../projects/up/src/lib/utils/auto-unsubscribe-component.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,SAAS,EAAa,MAAM,eAAe,CAAC;AACrD,OAAO,EAAE,mBAAmB,EAAE,MAAM,wBAAwB,CAAC;;AAE7D,qBACa,wBAAyB,SAAQ,mBAAoB,YAAW,SAAS;IACpF,WAAW,IAAI,IAAI;yCADR,wBAAwB;2CAAxB,wBAAwB;CAIpC"}

@@ -1,0 +1,3 @@
+export * from './avatar.component';
+export * from './avatar.module';
+//# sourceMappingURL=public-api.d.ts.map

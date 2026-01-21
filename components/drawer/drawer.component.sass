@@ -1,0 +1,64 @@
+@import "btx-css-lib/lib/foundation/common"
+
+.up-drawer__backdrop
+  display: none
+  background-color: #000
+  position: fixed
+  top: 0
+  right: 0
+  bottom: 0
+  left: 0
+  z-index: 1030
+
+.up-drawer-container
+  position: fixed
+  top: 0
+  bottom: 0
+  right: 0
+  max-width: 450px
+  width: calc(100% - 18px)
+  z-index: 1050
+  background: #fff
+  transform: translate3d(450px,0,0)
+  overflow-y: auto
+  overflow-x: hidden
+  .panel
+    margin: calc(12*var(--up-spacing-base-unit))
+    padding: 0
+    overflow: hidden
+    height: calc(100% - 96px)
+    display: flex
+    flex-direction: column
+  &.left-drawer
+    transform: translate3d(-450px,0,0)
+    left: 0
+    right: auto
+
+.close
+  background: unset
+  border: 0
+  font-size: 24px
+  position: absolute
+  right: 10px
+  top: 10px
+  cursor: pointer
+
+@media screen and (max-width: $up-medium-screen)
+  .up-drawer-container
+    .panel
+      margin: 0
+      padding: calc(4*var(--up-spacing-base-unit)) calc(7*var(--up-spacing-base-unit)) calc(4*var(--up-spacing-base-unit)) calc(12*var(--up-spacing-base-unit))
+    .close
+      top: 16px
+      left: 14px
+      right: auto
+    &.left-drawer
+      .panel
+        margin: 0
+        padding: calc(4*var(--up-spacing-base-unit)) calc(12*var(--up-spacing-base-unit)) calc(4*var(--up-spacing-base-unit)) calc(7*var(--up-spacing-base-unit))
+      .close
+        top: 16px
+        right: 14px
+        left: auto
+
+

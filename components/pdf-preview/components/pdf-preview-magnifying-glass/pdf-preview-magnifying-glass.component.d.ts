@@ -1,0 +1,45 @@
+import { ElementRef, NgZone, OnDestroy, Renderer2 } from '@angular/core';
+import { PDFDocumentProxy } from 'ng2-pdf-viewer';
+import * as i0 from "@angular/core";
+export declare class PdfPreviewMagnifyingGlassComponent implements OnDestroy {
+    private ngZone;
+    private renderer;
+    parentElement: ElementRef;
+    document: PDFDocumentProxy;
+    page: number;
+    magnifyingSize: string | number;
+    mouseSensibility: number;
+    private destroy$;
+    private animationFrame;
+    private canvasContainerOffset;
+    private canvas;
+    private canvasContainer;
+    private hoveringPageNumber;
+    private scale;
+    private nativeWidth;
+    private nativeHeight;
+    private canvasContainerWidth;
+    private canvasContainerHeight;
+    private containerWidth;
+    private containerHeight;
+    private CANVAS_CLASSNAME;
+    private CANVAS_CONTAINER_CLASSNAME;
+    private PDF_CONTAINER_CLASSNAME;
+    constructor(ngZone: NgZone, renderer: Renderer2);
+    ngOnDestroy(): void;
+    createMagnifyingGlass(): void;
+    destroyMagnifyingGlass(): void;
+    private createMagnifyingGlassDOMElement;
+    private calculateCanvasOffset;
+    private renderZoomedPageOnCanvas;
+    private bindMagnifyingGlass;
+    private isMouseOutsidePdfContainer;
+    private hideMagnifyingGlass;
+    private showMagnifyingGlass;
+    private getZoomedViewPort;
+    private setCanvasDimensions;
+    private backingScale;
+    static ɵfac: i0.ɵɵFactoryDeclaration<PdfPreviewMagnifyingGlassComponent, never>;
+    static ɵcmp: i0.ɵɵComponentDeclaration<PdfPreviewMagnifyingGlassComponent, "up-pdf-preview-magnifying-glass", never, { "parentElement": "parentElement"; "document": "document"; "page": "page"; "magnifyingSize": "magnifyingSize"; "mouseSensibility": "mouseSensibility"; }, {}, never, never, false>;
+}
+//# sourceMappingURL=pdf-preview-magnifying-glass.component.d.ts.map

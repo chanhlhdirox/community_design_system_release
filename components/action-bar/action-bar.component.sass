@@ -1,0 +1,26 @@
+@import "btx-css-lib/lib/mixins/typography"
+
+.up-action-bar
+  @include up-typography-buttons
+  display: flex
+  min-height: 50px
+  color: white
+  background: var(--up-brand-1-700)
+  border-bottom: 2px solid var(--up-brand-1-900)
+
+  .action-bar-content
+    display: flex
+    flex-wrap: wrap
+    width: 100%
+    .action-highlighted + up-action-bar-action:before
+      background-color: transparent
+    up-action-bar-action:first-child:before
+      background-color: transparent
+
+  .bar-loading
+    opacity: 0.2
+
+  .spinner-container
+    position: absolute
+    align-self: center
+    left: 50%

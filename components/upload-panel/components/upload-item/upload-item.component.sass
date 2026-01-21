@@ -1,0 +1,89 @@
+.up-upload-item-container
+  width: 360px
+  height: 52px
+  background-color: var(--up-white)
+  border-bottom: 1px solid var(--up-neutral-400)
+
+  .up-upload-item
+    display: flex
+    padding: 13.5px 20px
+
+    .up-upload-item-progress-container
+      i.up-upload-item-details
+        visibility: visible
+
+    p.upload-completed
+      color: var(--up-neutral-900)
+    p.upload-in-progress
+      color: var(--up-neutral-500)
+    p.upload-cancelled
+      margin-top: -5px
+      margin-left: 12px
+
+    .up-upload-item-progress-container
+      display: flex
+      width: 20px
+      height: inherit
+      margin-left: auto
+      justify-content: center
+      align-items: center
+
+      i:hover
+        cursor: pointer
+
+      i.up-upload-item-details
+        visibility: hidden
+
+      .up-upload-progress
+        padding-top: 7px
+        margin-right: 20px
+
+      .up-upload-progress-placeholder
+        margin-right: 20px
+
+    .up-upload-item-icon-container
+      display: flex
+      justify-content: center
+      align-items: center
+      margin-right: 9.33px
+
+      .up-upload-item-failed-container
+        margin-top: -15px
+
+    .up-upload-item-filename-container
+      .up-upload-item-failed-text
+        color: var(--up-negative-700)
+
+      .up-upload-item-cancelled-text
+        margin-left: 12px
+        color: var(--up-neutral-700)
+
+  .up-upload-item-in-progress, .up-upload-item-failure, .up-upload-item-cancelled
+    @extend .up-upload-item
+    &:hover
+      background-color: var(--up-white)
+
+  .up-upload-item-in-progress
+    align-items: center
+    padding: 5px 24px 0 10px
+
+    .up-upload-item-progress-container
+      i.up-upload-item-cancel-upload
+        visibility: hidden
+
+  .up-upload-item-in-progress:hover
+    .up-upload-item-progress-container
+      i.up-upload-item-cancel-upload
+        padding: 0
+        visibility: visible
+
+  .up-upload-item-failure
+    padding: 6.5px 20px
+
+  .up-upload-item-cancelled
+    padding-bottom: 0
+
+
+\:host:last-of-type
+  .up-upload-item-container
+    border-bottom: none

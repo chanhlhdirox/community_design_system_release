@@ -1,0 +1,1 @@
+{"version":3,"file":"spacing-configuration.interface.d.ts","sourceRoot":"","sources":["../../../../../../projects/up/src/lib/theme/interfaces/spacing-configuration.interface.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,oBAAoB,EAAE,MAAM,UAAU,CAAC;AAChD,OAAO,EAAE,UAAU,EAAE,MAAM,yBAAyB,CAAC;AAErD,MAAM,WAAW,oBAAoB;IACnC,CAAC,oBAAoB,CAAC,QAAQ,CAAC,EAAE,UAAU,CAAC;CAC7C"}

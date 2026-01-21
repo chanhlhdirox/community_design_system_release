@@ -1,0 +1,33 @@
+@import "btx-css-lib/lib/foundation/common"
+
+.up-placeholder-content-container
+  width: inherit
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+
+@mixin placeholder-text-small-screen
+  @media screen and (min-width: $up-small-screen)
+    text-align: left
+  @media screen and (min-width: $up-medium-screen), (min-width: $up-large-screen)
+    text-align: center
+
+.up-placeholder-story-container-complete
+  display: flex
+  justify-content: left
+  padding: calc(24 * var(--up-spacing-base-unit)) calc(32 * var(--up-spacing-base-unit))
+
+  &.card
+    background-color: var(--up-white)
+    border: 1px solid var(--up-neutral-400)
+
+  .up-placeholder-item-container,
+  .up-placeholder-story-text-container,
+  .up-placeholder-story-buttons-container
+    display: flex
+    justify-content: center
+    align-items: center
+
+  .up-placeholder-story-text-container
+    @include placeholder-text-small-screen

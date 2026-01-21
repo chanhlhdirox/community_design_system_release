@@ -1,0 +1,18 @@
+import { Component, Output, EventEmitter } from '@angular/core';
+import * as i0 from "@angular/core";
+import * as i1 from "../../../../icons/icon.directive";
+import * as i2 from "../../../../spacing/spacing.directive";
+export class UpNavigateBackComponent {
+    constructor() {
+        this.goBack = new EventEmitter();
+    }
+}
+UpNavigateBackComponent.ɵfac = i0.ɵɵngDeclareFactory({ minVersion: "12.0.0", version: "14.3.0", ngImport: i0, type: UpNavigateBackComponent, deps: [], target: i0.ɵɵFactoryTarget.Component });
+UpNavigateBackComponent.ɵcmp = i0.ɵɵngDeclareComponent({ minVersion: "14.0.0", version: "14.3.0", type: UpNavigateBackComponent, selector: "up-navigate-back", outputs: { goBack: "goBack" }, ngImport: i0, template: "<div\n  class=\"up-header-previous-page\"\n  upMarginRight=\"4\"\n  upPaddingBottom=\"1\"\n  (click)=\"goBack.emit()\"\n  data-test=\"up-back-navigation\"\n>\n  <span\n    class=\"up-header-back-icon-container\"\n    width=\"24px\"\n    height=\"24px\"\n    [upIcon]=\"'back_arrow_medium'\"\n  ></span>\n</div>\n", dependencies: [{ kind: "directive", type: i1.UpIconDirective, selector: "[upIcon]", inputs: ["upIcon", "fallback", "color", "width", "height"] }, { kind: "directive", type: i2.UpMarginRightDirective, selector: "[upMarginRight]", inputs: ["upMarginRight"] }, { kind: "directive", type: i2.UpPaddingBottomDirective, selector: "[upPaddingBottom]", inputs: ["upPaddingBottom"] }] });
+i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "14.3.0", ngImport: i0, type: UpNavigateBackComponent, decorators: [{
+            type: Component,
+            args: [{ selector: 'up-navigate-back', template: "<div\n  class=\"up-header-previous-page\"\n  upMarginRight=\"4\"\n  upPaddingBottom=\"1\"\n  (click)=\"goBack.emit()\"\n  data-test=\"up-back-navigation\"\n>\n  <span\n    class=\"up-header-back-icon-container\"\n    width=\"24px\"\n    height=\"24px\"\n    [upIcon]=\"'back_arrow_medium'\"\n  ></span>\n</div>\n" }]
+        }], propDecorators: { goBack: [{
+                type: Output
+            }] } });
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoibmF2aWdhdGUtYmFjay5jb21wb25lbnQuanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyIuLi8uLi8uLi8uLi8uLi8uLi8uLi8uLi9wcm9qZWN0cy91cC9jb21wb25lbnRzL3BhZ2UtaGVhZGVyL2NvbXBvbmVudHMvaGVhZGVyL2NvbXBvbmVudHMvbmF2aWdhdGUtYmFjay5jb21wb25lbnQudHMiLCIuLi8uLi8uLi8uLi8uLi8uLi8uLi8uLi9wcm9qZWN0cy91cC9jb21wb25lbnRzL3BhZ2UtaGVhZGVyL2NvbXBvbmVudHMvaGVhZGVyL2NvbXBvbmVudHMvbmF2aWdhdGUtYmFjay5jb21wb25lbnQuaHRtbCJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQSxPQUFPLEVBQUUsU0FBUyxFQUFFLE1BQU0sRUFBRSxZQUFZLEVBQUUsTUFBTSxlQUFlLENBQUM7Ozs7QUFNaEUsTUFBTSxPQUFPLHVCQUF1QjtJQUpwQztRQU9FLFdBQU0sR0FBdUIsSUFBSSxZQUFZLEVBQVEsQ0FBQztLQUN2RDs7b0hBSlksdUJBQXVCO3dHQUF2Qix1QkFBdUIsdUZDTnBDLDBUQWNBOzJGRFJhLHVCQUF1QjtrQkFKbkMsU0FBUzsrQkFDRSxrQkFBa0I7OEJBTTVCLE1BQU07c0JBREwsTUFBTSIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCB7IENvbXBvbmVudCwgT3V0cHV0LCBFdmVudEVtaXR0ZXIgfSBmcm9tICdAYW5ndWxhci9jb3JlJztcblxuQENvbXBvbmVudCh7XG4gIHNlbGVjdG9yOiAndXAtbmF2aWdhdGUtYmFjaycsXG4gIHRlbXBsYXRlVXJsOiAnbmF2aWdhdGUtYmFjay5jb21wb25lbnQuaHRtbCdcbn0pXG5leHBvcnQgY2xhc3MgVXBOYXZpZ2F0ZUJhY2tDb21wb25lbnQge1xuXG4gIEBPdXRwdXQoKVxuICBnb0JhY2s6IEV2ZW50RW1pdHRlcjx2b2lkPiA9IG5ldyBFdmVudEVtaXR0ZXI8dm9pZD4oKTtcbn1cbiIsIjxkaXZcbiAgY2xhc3M9XCJ1cC1oZWFkZXItcHJldmlvdXMtcGFnZVwiXG4gIHVwTWFyZ2luUmlnaHQ9XCI0XCJcbiAgdXBQYWRkaW5nQm90dG9tPVwiMVwiXG4gIChjbGljayk9XCJnb0JhY2suZW1pdCgpXCJcbiAgZGF0YS10ZXN0PVwidXAtYmFjay1uYXZpZ2F0aW9uXCJcbj5cbiAgPHNwYW5cbiAgICBjbGFzcz1cInVwLWhlYWRlci1iYWNrLWljb24tY29udGFpbmVyXCJcbiAgICB3aWR0aD1cIjI0cHhcIlxuICAgIGhlaWdodD1cIjI0cHhcIlxuICAgIFt1cEljb25dPVwiJ2JhY2tfYXJyb3dfbWVkaXVtJ1wiXG4gID48L3NwYW4+XG48L2Rpdj5cbiJdfQ==

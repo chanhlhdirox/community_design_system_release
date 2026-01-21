@@ -1,0 +1,11 @@
+import { Component } from '@angular/core';
+import * as i0 from "@angular/core";
+export class UpCardComponent {
+}
+UpCardComponent.ɵfac = i0.ɵɵngDeclareFactory({ minVersion: "12.0.0", version: "14.3.0", ngImport: i0, type: UpCardComponent, deps: [], target: i0.ɵɵFactoryTarget.Component });
+UpCardComponent.ɵcmp = i0.ɵɵngDeclareComponent({ minVersion: "14.0.0", version: "14.3.0", type: UpCardComponent, selector: "up-card", ngImport: i0, template: "<div class=\"up-card\">\n  <ng-content select=\"[upCardHeader]\"></ng-content>\n  <ng-content select=\"[upCardBody]\"></ng-content>\n  <ng-content select=\"[upCardFooter]\"></ng-content>\n</div>\n" });
+i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "14.3.0", ngImport: i0, type: UpCardComponent, decorators: [{
+            type: Component,
+            args: [{ selector: 'up-card', template: "<div class=\"up-card\">\n  <ng-content select=\"[upCardHeader]\"></ng-content>\n  <ng-content select=\"[upCardBody]\"></ng-content>\n  <ng-content select=\"[upCardFooter]\"></ng-content>\n</div>\n" }]
+        }] });
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiY2FyZC5jb21wb25lbnQuanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyIuLi8uLi8uLi8uLi8uLi9wcm9qZWN0cy91cC9jb21wb25lbnRzL2NhcmQvY2FyZC5jb21wb25lbnQudHMiLCIuLi8uLi8uLi8uLi8uLi9wcm9qZWN0cy91cC9jb21wb25lbnRzL2NhcmQvY2FyZC5jb21wb25lbnQuaHRtbCJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQSxPQUFPLEVBQUUsU0FBUyxFQUFFLE1BQU0sZUFBZSxDQUFDOztBQU0xQyxNQUFNLE9BQU8sZUFBZTs7NEdBQWYsZUFBZTtnR0FBZixlQUFlLCtDQ041QixzTUFLQTsyRkRDYSxlQUFlO2tCQUozQixTQUFTOytCQUNFLFNBQVMiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgeyBDb21wb25lbnQgfSBmcm9tICdAYW5ndWxhci9jb3JlJztcblxuQENvbXBvbmVudCh7XG4gIHNlbGVjdG9yOiAndXAtY2FyZCcsXG4gIHRlbXBsYXRlVXJsOiAnY2FyZC5jb21wb25lbnQuaHRtbCdcbn0pXG5leHBvcnQgY2xhc3MgVXBDYXJkQ29tcG9uZW50IHt9XG4iLCI8ZGl2IGNsYXNzPVwidXAtY2FyZFwiPlxuICA8bmctY29udGVudCBzZWxlY3Q9XCJbdXBDYXJkSGVhZGVyXVwiPjwvbmctY29udGVudD5cbiAgPG5nLWNvbnRlbnQgc2VsZWN0PVwiW3VwQ2FyZEJvZHldXCI+PC9uZy1jb250ZW50PlxuICA8bmctY29udGVudCBzZWxlY3Q9XCJbdXBDYXJkRm9vdGVyXVwiPjwvbmctY29udGVudD5cbjwvZGl2PlxuIl19

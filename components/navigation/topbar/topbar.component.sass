@@ -1,0 +1,62 @@
+.UpTopBarComponent
+  display: flex
+
+  .up-top-bar-container
+    display: flex
+    width: 100%
+    height: 64px
+    flex-direction: row
+    justify-content: space-between
+    align-items: center
+    background-color: var(--up-brand-1)
+
+    .up-top-bar-page-title, .up-tob-bar-page-details
+      display: flex
+
+    .up-top-bar-page-title
+      flex-direction: column
+
+    .up-tob-bar-page-details
+      flex-direction: row
+
+    .up-tob-bar-page-details
+      justify-content: center
+      align-items: center
+      margin-right: 44px
+
+      .up-top-bar-profile-area
+        height: 100%
+        display: flex
+        margin-left: 28px
+        flex-direction: row
+        align-items: center
+
+        &.up-top-bar-profile-area-with-menu
+          cursor: pointer
+
+      .up-tob-bar-chevron-container
+        width: 16px
+        height: 16px
+        margin-left: 4px
+        cursor: pointer
+        &:hover
+          svg
+            color: var(--up-brand-1-200)
+        &:active
+          svg
+            color: var(--up-white)
+
+      .up-top-bar-separator
+        width: 1px
+        height: 16px
+        border: 1px solid var(--up-brand-1-500)
+        margin-left: 20px
+        margin-right: 20px
+
+      .custom-chevron
+        margin-left: 4px
+        width: 16px
+        height: 100%
+        display: flex
+        align-items: center
+        justify-content: center

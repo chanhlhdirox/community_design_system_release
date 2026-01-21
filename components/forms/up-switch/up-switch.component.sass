@@ -1,0 +1,123 @@
+@import '../../../styles/core/typography'
+
+.up-switch
+  display: flex
+
+.up-switch-input
+  position: relative
+  display: inline-block
+  bottom: 1px
+
+  & .up-switch-bar
+    position: relative
+    display: inline-block
+    border-radius: 46px
+    transition: 0.2s
+    text-align: center
+
+  & .up-switch-bar:after
+    content: ''
+    position: absolute
+    width: 50px
+    height: 50px
+    border-radius: 100%
+    left: 0
+    top: -5px
+    z-index: 2
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2)
+    transition: 0.2s
+
+  & input
+    position: absolute
+    left: 0
+    top: 0
+    width: 100%
+    height: 100%
+    z-index: 5
+    opacity: 0
+    cursor: pointer
+
+  & input:checked + .up-switch-bar:after
+    left: 40px
+
+  .up-switch & .up-switch-bar
+    background: var(--up-neutral-500)
+    height: 8px
+    width: 24px
+
+  .up-switch & .up-switch-bar:after
+    background: var(--up-neutral-700)
+    top: -4px
+    width: 16px
+    height: 16px
+
+  .up-switch & input:hover:enabled + .up-switch-bar:after
+    background-color: var(--up-neutral-800)
+
+  .up-switch & input:checked + .up-switch-bar
+    background: var(--up-brand-1-200)
+
+  .up-switch & input:checked + .up-switch-bar:after
+    background: var(--up-brand-1-500)
+    left: 10px
+    line-height: 75%
+    content: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iOCIgaGVpZ2h0PSI2IiB2aWV3Qm94PSIwIDAgOCA2IiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8cGF0aCBkPSJNMSAzTDMgNUw3IDEiIHN0cm9rZT0id2hpdGUiIHN0cm9rZS13aWR0aD0iMS41IiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz4KPC9zdmc+Cg==')
+
+  .up-switch & input:hover:checked:enabled + .up-switch-bar:after
+    background-color: var(--up-brand-1-600)
+
+  .up-switch & input:disabled + .up-switch-bar:after
+    background: var(--up-neutral-500)
+
+  .up-switch & input:disabled + .up-switch-bar
+    background: var(--up-neutral-400)
+
+  .up-switch & input:active:checked:enabled + .up-switch-bar:after
+    background: var(--up-brand-1-400)
+
+  .up-switch & input:active:enabled + .up-switch-bar:after
+    background: var(--up-neutral-600)
+
+.up-sw-label
+  padding: 0
+  display: flex
+  cursor: pointer
+  i
+    height: 13px
+    width: 13px
+    display: flex
+    margin-left: 5px
+    svg
+      height: 13px
+      width: 13px
+
+  .up-switch-content-container
+    display: flex
+    .up-switch-icon-container-left, .up-switch-icon-container-right
+      i
+        margin-top: 2px
+    .up-switch-icon-container-left
+      i
+        margin-right: 5px
+
+.label-to-left
+  .up-sw-label
+    padding-right: 8px
+    padding-left: 0
+
+.label-to-right
+  .up-sw-label
+    padding-right: 0
+    padding-left: 8px
+
+
+.disable-switch
+  .up-sw-label
+    color: var(--up-neutral-500)
+
+.up-check-icon
+  width: 20px !important
+  height: 20px
+  color: red
+  z-index: 10
+  position: absolute

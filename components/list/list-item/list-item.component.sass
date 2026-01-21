@@ -1,0 +1,30 @@
+@import "btx-css-lib/lib/foundation/paragraphs/paragraph-XXS"
+
+.up-list-item
+  display: flex
+  flex-direction: row
+  align-items: baseline
+  min-height: 44px
+  padding: 10px 16px
+  background: #FFFFFF
+  border-bottom: 1px solid var(--up-neutral-400)
+  &.active
+    background-color: var(--up-brand-1-50)
+  &.disabled
+    .content
+      color: var(--up-neutral-500)
+  .prefix
+    padding-right: 13px
+    &:empty
+      padding-right: 0
+  .suffix
+    padding-left: 13px
+    &:empty
+      padding-left: 0
+  .content
+    @include up-paragraph-XXS
+    text-transform: uppercase
+    color: var(--up-neutral-900)
+    font-weight: bold
+    font-size: 12px
+    flex: 1

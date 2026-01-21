@@ -1,0 +1,52 @@
+.up-avatar-user-default, .up-avatar-company-icon-container, .up-avatar-company-container, .up-avatar-dark-mode
+  display: flex
+  justify-content: center
+  align-items: center
+  background-color: var(--up-brand-1-50)
+  -webkit-user-select: none
+  -moz-user-select: none
+  -ms-user-select: none
+  user-select: none
+
+.up-avatar-user-default
+  width: 32px
+  height: 32px
+  border: 1px solid var(--up-brand-1-100)
+  border-radius: 50px
+  background-size: cover
+  background-position: center
+
+  p
+    color: var(--up-brand-1-700)
+
+.up-avatar-dark-mode
+  @extend .up-avatar-user-default
+  background-color: var(--up-brand-1-700)
+  border: 1px solid var(--up-brand-1-400)
+
+  p
+    color: var(--up-white)
+    font-weight: 600
+
+.up-avatar-user-small
+  @extend .up-avatar-user-default
+  background-size: cover
+  background-position: center
+
+.up-avatar-user-small, .up-avatar-company-icon
+  width: 24px
+  height: 24px
+
+.up-avatar-user-large
+  @extend .up-avatar-user-default
+  background-size: cover
+  background-position: center
+  width: 48px
+  height: 48px
+
+.up-avatar-company-icon-container, .up-avatar-company-container
+  width: 36px
+  height: 36px
+
+.up-avatar-company-container
+  background-color: #FFFFFF

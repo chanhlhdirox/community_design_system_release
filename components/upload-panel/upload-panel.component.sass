@@ -1,0 +1,73 @@
+.up-upload-panel-container
+  display: flex
+  width: 360px
+  flex-direction: column
+  ::-webkit-scrollbar
+    width: 5px
+  ::-webkit-scrollbar-track
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3)
+  ::-webkit-scrollbar-thumb
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5)
+
+  .up-upload-status-header
+    display: flex
+    height: 56px
+    align-items: center
+    background-color: var(--up-brand-1-800)
+    border: none
+    padding: 0 22px 0 24px
+
+    .up-upload-panel-title-container
+      width: 100%
+      height: inherit
+      display: flex
+      align-items: center
+      &:hover
+        cursor: pointer
+
+    h3
+      color: var(--up-white)
+
+    .up-upload-status-icons-container
+      display: flex
+      margin-left: auto
+      justify-content: space-between
+      i:hover
+        cursor: pointer
+
+      .up-upload-status-icons-success
+        display: flex
+        i:hover
+          cursor: pointer
+
+        .up-upload-status-icons-separator
+          width: 1px
+          height: 16px
+          margin: 3px 10px 0 10px
+          background: var(--up-brand-1-500)
+
+  .up-upload-status-header-rounded
+    @extend .up-upload-status-header
+    border-radius: 30px
+
+  .up-upload-panel-header
+    display: flex
+    height: 40px
+    background-color: var(--up-neutral-200)
+    justify-content: center
+    align-items: center
+    padding: 0 8px 0 24px
+
+    .up-upload-panel-remaining-time-info
+      color: var(--up-neutral-900)
+      margin-right: auto
+
+    .up-upload-panel-cancel-button
+      margin-left: auto
+
+  .up-upload-items-container
+    box-shadow: 0 5px 10px -2px var(--up-brand-1-100)
+    height: 300px
+    overflow: hidden scroll
+    background-color: var(--up-white)
+    scrollbar-width: thin

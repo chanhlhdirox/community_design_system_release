@@ -1,0 +1,1 @@
+{"version":3,"file":"base-table-row-column.d.ts","sourceRoot":"","sources":["../../../../../projects/up/components/table/helpers/base-table-row-column.ts"],"names":[],"mappings":"AACA,OAAO,EAAc,cAAc,EAAE,MAAM,UAAU,CAAC;;AAEtD,qBACa,2BAA2B;IAC7B,cAAc,EAAE,cAAc,CAAmB;IAE1D,IAA4C,oBAAoB,YAE/D;yCALU,2BAA2B;2CAA3B,2BAA2B;CAMvC"}

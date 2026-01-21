@@ -1,0 +1,33 @@
+\:host
+  .up-section-title-default
+    display: flex
+    flex-direction: column
+    padding: 26px 24px 12px 24px
+
+    h3
+      color: var(--up-brand-1-400)
+
+    .up-sidebar-section-placeholder
+      display: none
+
+    .top-sidebar-section
+      padding: 0 24px 12px 24px
+
+  .up-section-title-collapsed
+    width: 99%
+    display: flex
+    justify-content: center
+    padding: 0
+
+    h3
+      display: none
+
+    .up-sidebar-section-placeholder
+      display: flex
+      width: inherit
+      border: 1px solid var(--up-brand-1-400)
+
+\:host:first-of-type
+  .up-section-title-collapsed
+    .up-sidebar-section-placeholder
+      display: none

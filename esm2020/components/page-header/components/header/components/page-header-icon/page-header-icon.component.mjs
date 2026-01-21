@@ -1,0 +1,16 @@
+import { Component, Input } from '@angular/core';
+import * as i0 from "@angular/core";
+import * as i1 from "../../../../../icons/icon.directive";
+import * as i2 from "../../../../../spacing/spacing.directive";
+export class PageHeaderIconComponent {
+    constructor() { }
+}
+PageHeaderIconComponent.ɵfac = i0.ɵɵngDeclareFactory({ minVersion: "12.0.0", version: "14.3.0", ngImport: i0, type: PageHeaderIconComponent, deps: [], target: i0.ɵɵFactoryTarget.Component });
+PageHeaderIconComponent.ɵcmp = i0.ɵɵngDeclareComponent({ minVersion: "14.0.0", version: "14.3.0", type: PageHeaderIconComponent, selector: "up-page-header-icon", inputs: { icon: "icon" }, ngImport: i0, template: "<i upMarginLeft=\"4\" [upIcon]=\"icon\" width=\"24px\" height=\"24px\"></i>\n", styles: [":host{display:-webkit-inline-flex;display:inline-flex;cursor:pointer}\n"], dependencies: [{ kind: "directive", type: i1.UpIconDirective, selector: "[upIcon]", inputs: ["upIcon", "fallback", "color", "width", "height"] }, { kind: "directive", type: i2.UpMarginLeftDirective, selector: "[upMarginLeft]", inputs: ["upMarginLeft"] }] });
+i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "14.3.0", ngImport: i0, type: PageHeaderIconComponent, decorators: [{
+            type: Component,
+            args: [{ selector: 'up-page-header-icon', template: "<i upMarginLeft=\"4\" [upIcon]=\"icon\" width=\"24px\" height=\"24px\"></i>\n", styles: [":host{display:-webkit-inline-flex;display:inline-flex;cursor:pointer}\n"] }]
+        }], ctorParameters: function () { return []; }, propDecorators: { icon: [{
+                type: Input
+            }] } });
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoicGFnZS1oZWFkZXItaWNvbi5jb21wb25lbnQuanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyIuLi8uLi8uLi8uLi8uLi8uLi8uLi8uLi8uLi9wcm9qZWN0cy91cC9jb21wb25lbnRzL3BhZ2UtaGVhZGVyL2NvbXBvbmVudHMvaGVhZGVyL2NvbXBvbmVudHMvcGFnZS1oZWFkZXItaWNvbi9wYWdlLWhlYWRlci1pY29uLmNvbXBvbmVudC50cyIsIi4uLy4uLy4uLy4uLy4uLy4uLy4uLy4uLy4uL3Byb2plY3RzL3VwL2NvbXBvbmVudHMvcGFnZS1oZWFkZXIvY29tcG9uZW50cy9oZWFkZXIvY29tcG9uZW50cy9wYWdlLWhlYWRlci1pY29uL3BhZ2UtaGVhZGVyLWljb24uY29tcG9uZW50Lmh0bWwiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUEsT0FBTyxFQUFFLFNBQVMsRUFBRSxLQUFLLEVBQVUsTUFBTSxlQUFlLENBQUM7Ozs7QUFRekQsTUFBTSxPQUFPLHVCQUF1QjtJQUVsQyxnQkFBZSxDQUFDOztvSEFGTCx1QkFBdUI7d0dBQXZCLHVCQUF1QixxRkNScEMsK0VBQ0E7MkZET2EsdUJBQXVCO2tCQUxuQyxTQUFTOytCQUNFLHFCQUFxQjswRUFLdEIsSUFBSTtzQkFBWixLQUFLIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IHsgQ29tcG9uZW50LCBJbnB1dCwgT25Jbml0IH0gZnJvbSAnQGFuZ3VsYXIvY29yZSc7XG5pbXBvcnQgeyB1cEljb24gfSBmcm9tICcuLi8uLi8uLi8uLi8uLi9pY29ucy9saWInO1xuXG5AQ29tcG9uZW50KHtcbiAgc2VsZWN0b3I6ICd1cC1wYWdlLWhlYWRlci1pY29uJyxcbiAgdGVtcGxhdGVVcmw6ICcuL3BhZ2UtaGVhZGVyLWljb24uY29tcG9uZW50Lmh0bWwnLFxuICBzdHlsZVVybHM6IFsnLi9wYWdlLWhlYWRlci1pY29uLmNvbXBvbmVudC5zYXNzJ11cbn0pXG5leHBvcnQgY2xhc3MgUGFnZUhlYWRlckljb25Db21wb25lbnQge1xuICBASW5wdXQoKSBpY29uOiB1cEljb247XG4gIGNvbnN0cnVjdG9yKCkge31cbn1cbiIsIjxpIHVwTWFyZ2luTGVmdD1cIjRcIiBbdXBJY29uXT1cImljb25cIiB3aWR0aD1cIjI0cHhcIiBoZWlnaHQ9XCIyNHB4XCI+PC9pPlxuIl19

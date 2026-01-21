@@ -1,0 +1,26 @@
+@import "./variables"
+
+.cdk-overlay-container, .cdk-global-overlay-wrapper
+  pointer-events: none
+  top: 0
+  left: 0
+  height: 100%
+  width: 100%
+
+.cdk-overlay-container
+  position: fixed
+  z-index: $cdk-z-index-overlay-container
+
+.cdk-overlay-container:empty
+  display: none
+
+.cdk-global-overlay-wrapper
+  display: flex
+  position: absolute
+  z-index: $cdk-z-index-overlay-container
+
+.cdk-overlay-connected-position-bounding-box
+  z-index: $cdk-z-index-overlay-container + 1
+
+.up-dropdown-backdrop, .up-pop-out-backdrop
+  z-index: $cdk-z-index-overlay-container + 1

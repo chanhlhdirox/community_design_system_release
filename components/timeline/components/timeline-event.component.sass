@@ -1,0 +1,33 @@
+.up-timeline-event
+  display: flex
+  position: relative
+
+  .up-timeline-point-track-container
+    display: flex
+    flex: 0
+    flex-direction: column
+    align-items: center
+
+    .up-timeline-point
+      display: flex
+      position: absolute
+      width: 5px
+      height: 5px
+      top: 18px
+      background-color: black
+
+    .up-timeline-track
+      flex-grow: 1
+      background-color: var(--up-neutral-400)
+      width: 1px
+
+  .up-timeline-content
+    display: flex
+    flex-direction: column
+    flex: 1
+
+\:host(:last-child) .up-timeline-point-track-container .up-timeline-track
+  flex-grow: 0.13
+
+\:host(:last-child) .up-timeline-point-track-container .up-timeline-point
+  top: 18px

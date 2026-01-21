@@ -1,0 +1,48 @@
+@import "../common"
+
+$up-base-font-size: 16px
+$up-base-type-face: "Source Sans Pro"
+
+@function calcLineHeight($fontSize)
+  @return $fontSize * 1.5
+
+@function calcParagraphSpacing($fontSize)
+  @return $fontSize * 0.8
+
+@mixin up-typography-defaults
+  font-family: $up-base-type-face, serif
+  color: var(--up-coreTxt)
+  font-weight: 400
+  margin: 0
+
+@mixin up-titles-font-weight
+  font-weight: 700
+
+@mixin up-typography-buttons
+  font-family: $up-base-type-face, serif
+  font-weight: 600
+  font-size: $up-base-font-size
+
+@mixin up-typography-checkable
+  font-family: $up-base-type-face, serif
+  font-weight: 400
+  font-size: $up-base-font-size
+
+@mixin up-typography-tabs
+  @include up-typography-checkable
+
+@mixin up-typography-sums
+  font-family: $up-base-type-face, serif
+  font-weight: 300
+
+@mixin up-typography-label-light
+  font-family: $up-base-type-face, serif
+  font-weight: 400
+  font-size: 12px
+  line-height: 18px
+
+@mixin up-typography-label-bold
+  font-family: $up-base-type-face, serif
+  font-weight: 600
+  font-size: 14px
+  line-height: 21px

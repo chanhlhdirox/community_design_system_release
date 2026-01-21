@@ -1,0 +1,18 @@
+@import "btx-css-lib/lib/mixins/typography"
+
+.warning
+  display: flex
+  flex-direction: row
+  padding: 16px
+  color: var(--up-warning-900)
+  background-color: var(--up-warning-50)
+  .warning-icon-container
+    display: flex
+    align-items: center
+    justify-content: center
+    margin-right: 14px
+  .warning-content
+    @include up-typography-defaults
+    font-size: 16px
+    line-height: 24px
+    font-weight: 400

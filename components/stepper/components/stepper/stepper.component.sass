@@ -1,0 +1,64 @@
+.up-stepper-container
+  display: flex
+  flex-direction: column
+  width: 100%
+  .up-stepper-header
+    display: flex
+    flex-direction: row
+    width: 100%
+    .up-stepper-step
+      display: flex
+      flex-direction: row
+      color: var(--up-neutral-500)
+      position: relative
+      border-bottom: 1px solid var(--up-neutral-500)
+      cursor: pointer
+      .up-stepper-step-badge
+        width: 24px
+        height: 24px
+        color: var(--up-neutral-500)
+        line-height: 21px
+        border: 1px solid var(--up-neutral-500)
+        border-radius: 100%
+        display: flex
+        align-items: center
+        justify-content: center
+      .up-stepper-step-label
+        color: var(--up-neutral-500)
+      .up-stepper-step-delimiter
+        display: flex
+        align-items: center
+        justify-content: center
+        position: absolute
+        right: calc(2*var(--up-spacing-base-unit))
+        top: 0
+        bottom: 0
+      &.up-step-completed
+        .up-stepper-step-badge
+          background: var(--up-brand-1-50)
+          border: none
+        .up-stepper-step-label
+          color: var(--up-brand-1-700)
+      &.up-step-has-error
+        .up-stepper-step-badge
+          position: relative
+          .up-stepper-step-error-mark
+            position: absolute
+            top: -3px
+            right: 0
+            width: 8px
+            height: 8px
+            border-radius: 100%
+            background-color: var(--up-negative-500)
+            border: 1px solid #FFFFFF
+      &.up-step-active
+        .up-stepper-step-badge, .up-stepper-step-label
+          color: var(--up-neutral-900)
+        .up-stepper-step-label
+          font-weight: 600
+        .up-stepper-step-badge
+          border: 1px solid var(--up-neutral-900)
+      &.up-stepper-step--last
+        padding-right: 0
+      &.up-stepper-step--disabled
+        cursor: not-allowed

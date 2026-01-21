@@ -1,0 +1,44 @@
+.notification-progress-bar-container
+  height: 3px
+  width: 100%
+
+.up-progress-bar
+  height: 3px
+
+  &.up-progress-bar-info
+    background-color: var(--up-brand-1-700)
+
+    span
+      background-color: var(--up-brand-1-50)
+
+  &.up-progress-bar-success
+    background-color: var(--up-positive-700)
+
+    span
+      background-color: var(--up-positive-50)
+
+  &.up-progress-bar-warning
+    background-color: var(--up-warning-700)
+
+    span
+      background-color: var(--up-warning-50)
+
+  &.up-progress-bar-error
+    background-color: var(--up-negative-700)
+
+    span
+      background-color: var(--up-negative-50)
+
+  span
+    display: block
+    width: 0
+    height: 3px
+
+@keyframes progress
+  from
+    width: 0
+  to
+    width: 100%
+
+
+

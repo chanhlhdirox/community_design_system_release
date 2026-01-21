@@ -1,0 +1,40 @@
+@import "btx-css-lib/lib/foundation/paragraphs"
+
+.up-tag
+  @include up-paragraph-XS()
+  display: inline-block
+  min-height: 22px
+  font-weight: normal
+  line-height: 18px
+  background: var(--up-neutral-200)
+  color: var(--up-brand-1-800)
+  padding: 2px 4px
+
+  &.up-closable-tag
+    @include up-paragraph-S()
+    line-height: 21px
+    padding: 4px 8px
+    background: var(--up-brand-1-50)
+    color: var(--up-neutral-900)
+
+  .up-tag-label
+    flex: 1
+    color: var(--up-brand-1-800)
+
+  &:hover, &:focus
+    background: var(--up-brand-1-50)
+    color: var(--up-brand-1-800)
+
+    &.up-closable-tag
+      background: var(--up-brand-1-100)
+      color: var(--up-brand-2)
+
+    .up-tag-label
+      color: var(--up-brand-2)
+
+  i
+    cursor: pointer
+    margin-left: 8px
+    display: inline-block
+    position: relative
+    top: 4px

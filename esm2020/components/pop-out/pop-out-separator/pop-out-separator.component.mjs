@@ -1,0 +1,11 @@
+import { Component } from '@angular/core';
+import * as i0 from "@angular/core";
+export class UpPopOutSeparatorComponent {
+}
+UpPopOutSeparatorComponent.ɵfac = i0.ɵɵngDeclareFactory({ minVersion: "12.0.0", version: "14.3.0", ngImport: i0, type: UpPopOutSeparatorComponent, deps: [], target: i0.ɵɵFactoryTarget.Component });
+UpPopOutSeparatorComponent.ɵcmp = i0.ɵɵngDeclareComponent({ minVersion: "14.0.0", version: "14.3.0", type: UpPopOutSeparatorComponent, selector: "up-pop-out-menu-separator", ngImport: i0, template: '<span class="up-pop-out-separator"></span>', isInline: true, styles: [".up-dropdown-separator,.up-pop-out-separator{display:block;width:100%;height:1px;margin:16px 0;background:var(--up-neutral-400)}\n"] });
+i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "14.3.0", ngImport: i0, type: UpPopOutSeparatorComponent, decorators: [{
+            type: Component,
+            args: [{ selector: 'up-pop-out-menu-separator', template: '<span class="up-pop-out-separator"></span>', styles: [".up-dropdown-separator,.up-pop-out-separator{display:block;width:100%;height:1px;margin:16px 0;background:var(--up-neutral-400)}\n"] }]
+        }] });
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoicG9wLW91dC1zZXBhcmF0b3IuY29tcG9uZW50LmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiLi4vLi4vLi4vLi4vLi4vLi4vcHJvamVjdHMvdXAvY29tcG9uZW50cy9wb3Atb3V0L3BvcC1vdXQtc2VwYXJhdG9yL3BvcC1vdXQtc2VwYXJhdG9yLmNvbXBvbmVudC50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQSxPQUFPLEVBQUUsU0FBUyxFQUFFLE1BQU0sZUFBZSxDQUFDOztBQU8xQyxNQUFNLE9BQU8sMEJBQTBCOzt1SEFBMUIsMEJBQTBCOzJHQUExQiwwQkFBMEIsaUVBSDNCLDRDQUE0QzsyRkFHM0MsMEJBQTBCO2tCQUx0QyxTQUFTOytCQUNFLDJCQUEyQixZQUMzQiw0Q0FBNEMiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgeyBDb21wb25lbnQgfSBmcm9tICdAYW5ndWxhci9jb3JlJztcblxuQENvbXBvbmVudCh7XG4gIHNlbGVjdG9yOiAndXAtcG9wLW91dC1tZW51LXNlcGFyYXRvcicsXG4gIHRlbXBsYXRlOiAnPHNwYW4gY2xhc3M9XCJ1cC1wb3Atb3V0LXNlcGFyYXRvclwiPjwvc3Bhbj4nLFxuICBzdHlsZVVybHM6IFsnLi9wb3Atb3V0LXNlcGFyYXRvci5jb21wb25lbnQuc2FzcyddXG59KVxuZXhwb3J0IGNsYXNzIFVwUG9wT3V0U2VwYXJhdG9yQ29tcG9uZW50IHt9XG4iXX0=

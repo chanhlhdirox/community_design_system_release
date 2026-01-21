@@ -1,0 +1,81 @@
+.container
+  width: 100%
+  padding: 80px 0 80px 60px
+  display: grid
+  grid-template-columns: repeat(auto-fit, 11rem)
+  grid-template-rows: repeat(20, 6rem)
+
+.group
+  display: flex
+  flex-direction: column
+  width: 200px
+  margin: 0 24px 42px 24px
+  box-sizing: border-box
+  padding: 20px
+  justify-content: center
+  align-items: center
+
+.group.missing-icons
+  background: var(--up-negative-100)
+
+.group .icons
+  display: inline-flex
+  align-items: center
+
+.title
+  font-family: Source Sans Pro
+  font-style: normal
+  font-weight: normal
+  font-size: 14px
+  line-height: 21px
+  margin-top: 15px
+  margin-bottom: 20px
+  color: #3c3c3c
+
+.small
+  width: 16px
+  height: 16px
+
+.medium
+  width: 24px
+  height: 24px
+  margin-right: 36px
+
+.large
+  width: 32px
+  height: 32px
+  margin-right: 38px
+
+.info-section
+  display: inline-flex
+
+.info-section .small,
+.info-section .medium,
+.info-section .large
+  height: auto
+
+.info
+  font-family: Source Sans Pro
+  font-style: normal
+  font-weight: normal
+  font-size: 10px
+  line-height: 15px
+  color: #848484
+  text-align: center
+
+.small .empty-icon
+  width: 16px
+  height: 16px
+
+.medium .empty-icon
+  width: 24px
+  height: 24px
+
+
+.large .empty-icon
+  width: 32px
+  height: 32px
+
+.empty-icon
+  background: #faf2e6
+

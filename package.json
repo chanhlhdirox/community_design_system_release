@@ -1,0 +1,39 @@
+{
+  "name": "up",
+  "version": "0.0.1",
+  "peerDependencies": {
+    "@angular/common": "^14.3.0",
+    "@angular/core": "^14.3.0",
+    "css-vars-ponyfill": "^2.4.5",
+    "tinycolor2": "^1.4.2",
+    "@juggle/resize-observer": "^3.3.1",
+    "@types/resize-observer-browser": "^0.1.7",
+    "ng2-pdf-viewer": "^7.0.1",
+    "accounting": "^0.4.1",
+    "big.js": "^5.2.2"
+  },
+  "dependencies": {
+    "tslib": "^2.5.0",
+    "btx-css-lib": "git+ssh://git@bitbucket.org:unifiedpost/btx-css-lib.git#v1.0.35"
+  },
+  "module": "fesm2015/up.mjs",
+  "es2020": "fesm2020/up.mjs",
+  "esm2020": "esm2020/up.mjs",
+  "fesm2020": "fesm2020/up.mjs",
+  "fesm2015": "fesm2015/up.mjs",
+  "typings": "index.d.ts",
+  "exports": {
+    "./package.json": {
+      "default": "./package.json"
+    },
+    ".": {
+      "types": "./index.d.ts",
+      "esm2020": "./esm2020/up.mjs",
+      "es2020": "./fesm2020/up.mjs",
+      "es2015": "./fesm2015/up.mjs",
+      "node": "./fesm2015/up.mjs",
+      "default": "./fesm2020/up.mjs"
+    }
+  },
+  "sideEffects": false
+}

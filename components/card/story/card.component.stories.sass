@@ -1,0 +1,93 @@
+.up-card-story-container
+  height: 100vh
+  display: flex
+  justify-content: center
+  align-items: center
+
+  .up-card-story-container-medium
+    width: 650px
+
+    .up-card-story-header-container
+      display: flex
+
+      .up-card-story-header-title
+        margin-left: 13px
+
+    .up-card-story-body-container
+      display: flex
+      flex-direction: column
+
+      .up-card-story-total-amount
+        color: var(--up-neutral-800)
+
+      .up-card-story-body-separator
+        width: 100%
+        height: 1px
+        border-top: 1px solid var(--up-neutral-400)
+        margin: 16px 0
+
+      .up-card-story-amount-due-overview
+        display: flex
+        justify-content: space-between
+
+        .up-card-story-amount
+          display: flex
+          flex-direction: column
+
+  .up-card-story-container-narrow
+    width: 320px
+
+    .up-card-story-header-container
+      display: flex
+
+      .up-card-story-header-title
+        margin-left: 13px
+
+    .up-card-story-body-container
+      display: flex
+      flex-direction: column
+
+      .up-card-story-customers-list
+        list-style: none
+        margin: 0
+        padding: 0
+
+        .up-card-story-customers-list-item
+          display: flex
+          align-items: center
+          border-bottom: 1px solid var(--up-neutral-400)
+          &:last-child
+            border-bottom: none
+
+          .up-card-story-first-customer, .up-card-story-second-customer, .up-card-story-third-customer, .up-card-story-fourth-customer, .up-card-story-fifth-customer
+            display: flex
+            width: 24px
+            height: 24px
+            justify-content: center
+            align-items: center
+            color: var(--up-white)
+            background-color: var(--up-brand-1-900)
+
+          .up-card-story-second-customer
+            background-color: var(--up-brand-1-700)
+
+          .up-card-story-third-customer
+            background-color: var(--up-brand-1-500)
+
+          .up-card-story-fourth-customer
+            background-color: var(--up-brand-1-300)
+
+          .up-card-story-fifth-customer
+            background-color: var(--up-brand-1-100)
+
+  .up-card-story-footer-container
+    display: flex
+    align-items: center
+
+    button
+      padding-left: 0 !important
+
+    i
+      margin-top: 2px
+      margin-left: -10px
+

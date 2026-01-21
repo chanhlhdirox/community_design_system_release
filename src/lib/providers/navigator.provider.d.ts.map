@@ -1,0 +1,1 @@
+{"version":3,"file":"navigator.provider.d.ts","sourceRoot":"","sources":["../../../../../projects/up/src/lib/providers/navigator.provider.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,cAAc,EAAE,MAAM,eAAe,CAAC;AAE/C,MAAM,WAAW,mBAAmB;IAClC,QAAQ,EAAE,MAAM,CAAC;IACjB,cAAc,CAAC,EAAE,MAAM,CAAC;CACzB;AAED,eAAO,MAAM,iBAAiB,qCAA+D,CAAC"}

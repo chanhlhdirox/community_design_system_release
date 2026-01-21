@@ -1,0 +1,92 @@
+\:host
+  display: flex
+  flex-direction: row
+  width: 100%
+  font-size: 16px
+  padding: 12px 24px
+  color: var(--up-white)
+  user-select: none
+  background-color: var(--up-brand-1-700)
+
+  .up-user-data-container-default
+    display: flex
+    align-items: center
+    justify-content: center
+    flex-direction: row
+    width: 100%
+    min-height: 42px
+    h3.up-company-initials
+      display: none
+    .up-tob-bar-chevron-container
+      display: flex
+
+    .up-company-initials, .up-company-logo
+      display: flex
+      width: 36px
+      height: 36px
+      justify-content: center
+      align-items: center
+
+    .up-user-company-details
+      display: flex
+      align-items: flex-start
+      width: 100%
+      flex-direction: row
+      justify-content: space-between
+      .company-details
+        display: flex
+        flex-direction: column
+        word-break: break-word
+        width: 100%
+        h3.up-company-name, h3.up-company-initials
+          color: var(--up-white)
+          &.up-company-name--ellipses
+            white-space: nowrap
+            text-overflow: ellipsis
+            overflow: hidden
+        .country-client-number-wrapper
+          display: flex
+          width: 100%
+          align-items: center
+        .up-company-location, p.up-company-id
+          max-width: 122px
+          color: var(--up-brand-1-200)
+        .divider
+          background-color: var(--up-brand-1-200)
+          height: 15px
+          width: 1px
+
+  .up-user-company-details-collapsed
+    @extend .up-user-data-container-default
+    margin-bottom: 0
+    display: flex
+    align-items: center
+    justify-content: center
+    h3.up-company-name, p.up-company-id, .up-company-location, .divider
+      display: none
+    h3.up-company-initials
+      display: flex
+      justify-content: center
+      align-items: center
+    .up-tob-bar-chevron-container
+      display: none
+
+  .up-tob-bar-chevron-container
+    margin-left: 4px
+    cursor: pointer
+    height: 38px
+    display: flex
+    align-items: center
+    justify-content: center
+    .icon-container
+      display: block
+      width: 16px
+      height: 16px
+
+  .custom-right-side-content
+    margin-left: 4px
+    width: 16px
+    height: 38px
+    display: flex
+    align-items: center
+    justify-content: center

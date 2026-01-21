@@ -1,0 +1,7 @@
+export var PageNotificationState;
+(function (PageNotificationState) {
+    PageNotificationState["Enter"] = "enter";
+    PageNotificationState["Leave"] = "leave";
+    PageNotificationState["Done"] = "done";
+})(PageNotificationState || (PageNotificationState = {}));
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoicGFnZS1ub3RpZmljYXRpb24tc3RhdGUuZW51bS5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIi4uLy4uLy4uLy4uLy4uLy4uL3Byb2plY3RzL3VwL2NvbXBvbmVudHMvcGFnZS1ub3RpZmljYXRpb24vZW51bXMvcGFnZS1ub3RpZmljYXRpb24tc3RhdGUuZW51bS50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQSxNQUFNLENBQU4sSUFBWSxxQkFJWDtBQUpELFdBQVkscUJBQXFCO0lBQy9CLHdDQUFlLENBQUE7SUFDZix3Q0FBZSxDQUFBO0lBQ2Ysc0NBQWEsQ0FBQTtBQUNmLENBQUMsRUFKVyxxQkFBcUIsS0FBckIscUJBQXFCLFFBSWhDIiwic291cmNlc0NvbnRlbnQiOlsiZXhwb3J0IGVudW0gUGFnZU5vdGlmaWNhdGlvblN0YXRlIHtcbiAgRW50ZXIgPSAnZW50ZXInLFxuICBMZWF2ZSA9ICdsZWF2ZScsXG4gIERvbmUgPSAnZG9uZSdcbn1cbiJdfQ==

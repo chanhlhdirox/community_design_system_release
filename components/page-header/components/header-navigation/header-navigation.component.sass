@@ -1,0 +1,35 @@
+.up-header-options-container
+  display: flex
+  flex-direction: row
+  justify-content: center
+  align-items: center
+
+  .up-header-option-container
+    display: flex
+    cursor: pointer
+
+    &.up-header-option-disabled
+      p
+        color: var(--up-neutral-700)
+        cursor: not-allowed
+
+    span
+      display: block
+
+    p
+      color: var(--up-brand-1-500)
+      font-weight: 600
+      margin-top: -1px
+
+    .up-header-leading-icon
+      margin-right: 11px
+
+    .up-header-trailing-icon
+      margin-left: 11px
+
+  .up-header-option-divider
+    display: block
+    width: 1px
+    height: 16px
+    border-left: 1px solid var(--up-neutral-400)
+    margin: 0 16px 0 16px

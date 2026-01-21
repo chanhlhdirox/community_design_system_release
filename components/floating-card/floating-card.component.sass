@@ -1,0 +1,15 @@
+@import "btx-css-lib/lib/mixins/typography"
+@import "btx-css-lib/lib/components/floating-card"
+
+\:host
+  @extend .up-floating-card
+  padding: unset
+
+.card-min-width
+  min-width: 344px
+
+@media screen and (max-width: 344px)
+  .card-min-width
+    width: 100%
+    max-width: 344px
+    min-width: inherit

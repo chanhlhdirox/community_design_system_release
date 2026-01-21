@@ -1,0 +1,32 @@
+\:host
+  .open
+    display: flex
+    flex-direction: column
+    width: 264px
+    height: 100%
+    min-height: calc(100vh - 64px)
+    overflow: auto
+    background-color: var(--up-brand-2)
+
+    .toggle-sidebar-icon
+      display: flex
+      margin-left: auto
+      justify-content: center
+      align-items: center
+      width: 24px
+      height: 24px
+      position: absolute
+      top: 70px
+      left: 265px
+      z-index: 100
+      cursor: pointer
+      background-color: var(--up-brand-1-200)
+      i
+        margin-top: -1px
+
+  .collapsed
+    @extend .open
+    width: 84px
+
+    .toggle-sidebar-icon
+      left: 82px

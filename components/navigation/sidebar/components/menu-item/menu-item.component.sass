@@ -1,0 +1,147 @@
+.UpSidebarMenuItemComponent
+  .up-menu-item-container
+    display: flex
+    flex-direction: row
+    width: 264px
+    height: 52px
+    align-items: center
+    cursor: pointer
+    position: relative
+    &:hover, &:hover .up-menu-item
+      color: var(--up-brand-3-400)
+    &:hover .up-menu-item-icon
+      svg path
+        fill: var(--up-brand-3-400)
+
+    .up-menu-default
+      @extend .up-menu-item-container
+
+      .up-active-menu-identifier
+        width: 4px
+        height: 52px
+        background-color: var(--up-brand-2-900)
+
+      .up-menu-item
+        color: var(--up-brand-1-200)
+        width: 100%
+        white-space: nowrap
+        overflow: hidden
+        text-overflow: ellipsis
+
+      .up-menu-item-icon
+        margin-right: 10px
+        padding-left: 18px
+        padding-top: 4px
+        svg
+          width: 20px
+          height: 20px
+        svg path
+          fill: var(--up-brand-1-200)
+
+    .up-menu-selected
+      @extend .up-menu-item-container
+      background-color: var(--up-brand-1-600)
+      &:hover, &:hover .up-menu-item
+        color: var(--up-white)
+      &:hover .up-menu-item-icon
+        svg path
+          fill: var(--up-white)
+
+      &:hover .up-active-menu-identifier, &:active .up-active-menu-identifier
+        background-color: var(--up-brand-3-400)
+
+      .up-active-menu-identifier
+        width: 4px
+        height: 52px
+
+      .up-menu-item
+        color: var(--up-white)
+        width: 100%
+
+      .up-menu-item-icon
+        margin-right: 10px
+        padding-left: 14px
+        padding-top: 4px
+        svg
+          width: 20px
+          height: 20px
+        svg path
+          fill: var(--up-white)
+
+  .up-menu-item-container-collapsed
+    display: flex
+    width: 84px
+    height: 52px
+    justify-content: center
+    align-items: center
+    padding: 0
+    position: relative
+    cursor: pointer
+    &:hover .up-menu-item-icon
+      svg path
+        fill: var(--up-brand-3-400)
+
+    .up-badge-collapsed-container
+      position: absolute
+      top: -3px
+      left: 40px
+
+    .up-menu-default
+      @extend .up-menu-item-container-collapsed
+
+      .up-active-menu-identifier
+        width: 4px
+        height: 52px
+
+      .up-menu-item
+        display: none
+
+      .up-menu-item-icon
+        margin-right: 0
+        svg
+          width: 27px
+          height: 27px
+        svg path
+          fill: var(--up-brand-1-200)
+
+    .up-menu-selected
+      @extend .up-menu-item-container-collapsed
+      background-color: var(--up-brand-1-600)
+      &:hover .up-menu-item-icon
+        svg path
+          fill: var(--up-white)
+
+      &:hover .up-active-menu-identifier, &:active .up-active-menu-identifier
+        background-color: var(--up-brand-3-400)
+
+      .up-active-menu-identifier
+        width: 4px
+        height: 52px
+        position: absolute
+        left: 0
+
+      .up-menu-item
+        display: none
+
+      .up-menu-item-icon
+        svg
+          width: 27px
+          height: 27px
+        svg path
+          fill: var(--up-white)
+
+  .disabled.up-menu-item-container, .disabled.up-menu-item-container-collapsed
+    opacity: 0.48
+    .up-menu-default
+      cursor: not-allowed
+    .up-menu-item
+      color: var(--up-brand-1-200)
+      cursor: not-allowed
+    .up-menu-item-icon
+      svg path
+        fill: var(--up-brand-1-200) !important
+    &:hover, &:hover .up-menu-item
+      color: var(--up-brand-1-200) !important
+    &:hover .up-menu-item-icon
+      svg path
+        fill: var(--up-brand-1-200) !important

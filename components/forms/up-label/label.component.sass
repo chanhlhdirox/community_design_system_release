@@ -1,0 +1,39 @@
+@import "btx-css-lib/lib/mixins/typography"
+
+.UpLabelComponent
+  .up-form-field-label
+    white-space: normal
+  &.focused
+    label
+      color: var(--up-inputLabelFocus) !important
+
+  .new
+    @include up-typography-label-bold
+    padding: 2px 8px
+    background-color: var(--up-brand-3-400)
+    color: var(--up-brand-1-800)
+
+  .updated
+    @extend .new
+    background-color: var(--up-brand-1-500)
+    color: var(--up-white)
+
+  .error
+    @include up-typography-label-light
+    padding: 2px 8px
+    background-color: var(--up-negative-50)
+    color: var(--up-negative-900)
+
+  .warning
+    @extend .error
+    background-color: var(--up-warning-50)
+    color: var(--up-warning-900)
+
+  .default
+    @include up-typography-label-light
+    line-height: 21px
+    color: var(--up-neutral-700)
+
+  .readonly
+    @include up-typography-label-light
+    color: var(--up-neutral-700)

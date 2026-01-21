@@ -1,0 +1,126 @@
+@import '../../../styles/core/typography'
+/* On mouse-over,checked and clicked add corect color */
+.cp-container
+  display: flex
+  align-items: center
+
+.up-cb-container
+  display: inline-block
+  position: relative
+  padding-left: 20px
+  margin-bottom: 13.6px
+  cursor: pointer
+  -webkit-user-select: none
+  -moz-user-select: none
+  -ms-user-select: none
+  user-select: none
+
+  input
+    position: absolute
+    opacity: 0
+    cursor: pointer
+    height: 0
+    width: 0
+    left: 0
+
+  &:hover
+    input
+      ~ .up-checkmark
+        background-color: var(--up-white)
+        border-color: var(--up-brand-1-600)
+
+      &:checked ~ .up-checkmark
+        background-color: var(--up-brand-1-600)
+        border-color: var(--up-brand-1-600)
+
+  input
+    &:checked ~ .up-checkmark
+      background-color: var(--up-brand-1-500)
+      border-color: var(--up-brand-1-500)
+
+      &:after
+        display: block
+
+    &:active
+      ~ .up-checkmark
+        border-color: var(--up-brand-1-400)
+        background-color: var(--up-white)
+
+      &:checked ~ .up-checkmark
+        border-color: var(--up-brand-1-400)
+        background-color: var(--up-brand-1-400)
+
+    &:disabled
+      ~ .up-checkmark
+        border-color: var(--up-neutral-500)
+        background-color: var(--up-white)
+
+      &:checked ~ .up-checkmark
+        background-color: var(--up-neutral-500)
+        border-color: var(--up-neutral-500)
+
+  .up-checkmark:after
+    left: 4px
+    top: 2px
+    width: 4px
+    height: 7px
+    border: solid white
+    border-width: 0 2px 2px 0
+    -webkit-transform: rotate(45deg)
+    -ms-transform: rotate(45deg)
+    transform: rotate(45deg)
+
+.up-checkmark
+  position: absolute
+  top: 0
+  left: 0
+  height: 16px
+  width: 16px
+  background-color: var(--up-white)
+  border: 2px solid var(--up-brand-1-500)
+
+  &:after
+    content: ""
+    position: absolute
+    display: none
+
+.up-cb-label
+  padding: 0
+  word-break: break-word
+  white-space: normal
+  cursor: pointer
+  display: flex
+  align-items: center
+  i
+    height: 13px
+    width: 13px
+    display: flex
+    margin-left: 5px
+    svg
+      display: block
+      height: 13px
+      width: 13px
+
+  .up-cb-content-container
+    display: flex
+    padding-top: 3px
+    .up-cb-icon-container-left, .up-cb-icon-container-right
+      i
+        margin-top: 2px
+    .up-cb-icon-container-left
+      i
+        margin-right: 5px
+
+.label-to-left
+  .up-cb-label
+    padding-right: 8px
+    padding-left: 0
+
+.label-to-right
+  .up-cb-label
+    padding-right: 0
+    padding-left: 8px
+
+.disable-checkbox
+  .up-cb-label
+    color: var(--up-neutral-500)

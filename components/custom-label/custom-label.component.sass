@@ -1,0 +1,59 @@
+@import '../../styles/core/typography'
+
+.up-custom-label-new
+  @include up-typography-label-bold
+  padding: 2px 8px
+  background-color: var(--up-brand-3-400)
+
+  p
+    color: var(--up-brand-1-800)
+
+.up-custom-label-updated
+  @extend .up-custom-label-new
+  background-color: var(--up-brand-1-500)
+
+  p
+    color: var(--up-white)
+
+.up-custom-label-error
+  @include up-typography-label-light
+  padding: 2px 8px
+  background-color: var(--up-negative-50)
+
+  p
+    color: var(--up-negative-900)
+
+.up-custom-label-warning
+  @extend .up-custom-label-error
+  background-color: var(--up-warning-50)
+
+  p
+    color: var(--up-warning-900)
+
+.up-custom-label-positive
+  @extend .up-custom-label-error
+  background-color: var(--up-positive-50)
+
+  p
+    color: var(--up-positive-900)
+
+.up-custom-label-generic
+  @extend .up-custom-label-error
+  background-color: var(--up-brand-1-50)
+
+  p
+    color: var(--up-brand-1-700)
+
+.up-custom-label-neutral
+  @extend .up-custom-label-error
+  background-color: var(--up-neutral-200)
+
+  p
+    color: var(--up-neutral-900)
+
+.up-custom-label-default
+  @include up-typography-label-light
+  line-height: 21px
+
+  p
+    color: var(--up-neutral-700)

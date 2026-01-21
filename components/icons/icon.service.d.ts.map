@@ -1,0 +1,1 @@
+{"version":3,"file":"icon.service.d.ts","sourceRoot":"","sources":["../../../../projects/up/components/icons/icon.service.ts"],"names":[],"mappings":"AACA,OAAO,EAAE,MAAM,EAAE,MAAM,OAAO,CAAC;;AAE/B,qBACa,aAAa;IACxB,QAAQ,EAAE,GAAG,CAAC,MAAM,EAAE,MAAM,CAAC,CAA6B;IAE1D,aAAa,CAAC,KAAK,EAAE,MAAM,EAAE,GAAG,IAAI;IAIpC,QAAQ,CAAC,MAAM,EAAE,MAAM,GAAG,MAAM;yCAPrB,aAAa;6CAAb,aAAa;CAezB"}

@@ -1,0 +1,15 @@
+@import '../core/typography'
+
+@mixin up-sum-label-XL
+  @include up-typography-defaults
+  @include up-titles-font-weight
+
+  @media screen and (min-width: $up-small-screen)
+    font-size: 22px
+    line-height: 28px
+  @media screen and (min-width: $up-medium-screen)
+    font-size: 28px
+    line-height: 35px
+
+.up-sum-label-XL
+  @include up-sum-label-XL

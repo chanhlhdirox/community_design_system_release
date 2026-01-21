@@ -1,0 +1,40 @@
+import { AfterViewInit, ElementRef, OnInit } from '@angular/core';
+import { NgControl } from '@angular/forms';
+import { NumberPipe } from '../pipes/number.pipe';
+import { DecimalSeparatorService } from '../services/decimal-separator.service';
+import * as i0 from "@angular/core";
+export declare class NumberMaskDirective implements OnInit, AfterViewInit {
+    private locale;
+    private element;
+    private control;
+    private numberPipe;
+    private decimalSeparatorService;
+    defaultValue: string;
+    numberOfDecimals: number;
+    fixedDecimals: boolean;
+    allowNegativeValues: boolean;
+    storeControlValueAsString: boolean;
+    private decimalSeparator;
+    private thousandSeparator;
+    private digitsPattern;
+    private inputDecimalSeparator;
+    private inputThousandSeparator;
+    get MAX_DECIMALS(): number;
+    constructor(locale: string, element: ElementRef, control: NgControl, numberPipe: NumberPipe, decimalSeparatorService: DecimalSeparatorService);
+    ngOnInit(): void;
+    ngAfterViewInit(): void;
+    parseModel(value: string): string;
+    onInput(value: any): void;
+    onFocus(value: any): void;
+    onBlur(value: any): void;
+    private setInputSeparators;
+    private checkValue;
+    private applyNumberMask;
+    private updateValue;
+    private pipeDecimals;
+    private freeRangeDecimals;
+    private getSeparatorRegex;
+    static ɵfac: i0.ɵɵFactoryDeclaration<NumberMaskDirective, never>;
+    static ɵdir: i0.ɵɵDirectiveDeclaration<NumberMaskDirective, "[upNumberMask]", never, { "defaultValue": "defaultValue"; "numberOfDecimals": "numberOfDecimals"; "fixedDecimals": "fixedDecimals"; "allowNegativeValues": "allowNegativeValues"; "storeControlValueAsString": "storeControlValueAsString"; }, {}, never, never, false>;
+}
+//# sourceMappingURL=number-mask.directive.d.ts.map

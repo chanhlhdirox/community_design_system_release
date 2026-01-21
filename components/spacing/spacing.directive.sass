@@ -1,0 +1,22 @@
+$multipliers: 0, 0.5, 1, 2, 3, 4, 5, 6, 8, 10, 12, 16, 20, 24
+$positions: top, right, bottom, left
+
+@each $multiplier in $multipliers
+  $value: calc(#{$multiplier}*var(--up-spacing-base-unit))
+  $multiplierLabel: $multiplier
+
+  @if $multiplier == 0.5
+    $multiplierLabel: five-tenths
+
+  .up-padding-#{$multiplierLabel}
+    padding: $value
+
+  .up-margin-#{$multiplierLabel}
+    margin: $value
+
+  @each $position in $positions
+    .up-padding-#{$position}-#{$multiplierLabel}
+      padding-#{$position}: $value
+
+    .up-margin-#{$position}-#{$multiplierLabel}
+      margin-#{$position}: $value
