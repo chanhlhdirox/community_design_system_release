@@ -14,7 +14,7 @@
   },
   "dependencies": {
     "tslib": "^2.5.0",
-    "btx-css-lib": "git+ssh://git@bitbucket.org:unifiedpost/btx-css-lib.git#v1.0.35"
+    "btx-css-lib": "git+ssh://git@github.com:chanhlhdirox/btx-css-lib.git"
   },
   "module": "fesm2015/up.mjs",
   "es2020": "fesm2020/up.mjs",
